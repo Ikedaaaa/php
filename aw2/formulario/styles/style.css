@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+body{
+    background-color: ivory;
+}
+
+h1{
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+h3{
+    display: block;
+    font-size: 1.17em;
+    font-weight: bold;
+    margin: 0 auto 10px;
+}
+
+a{
+    color: black;
+    display: block;
+    padding: 10px;
+    background-color: white;
+    width: 80%;
+    margin: 10px auto 0;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.questoes{
+    background-color: rgb(214, 245, 255);
+    display: flex;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.questoes1{
+    width: 50%;
+}
+
+.fis{
+    margin-right: 20px;
+}
+
+.geo{
+    margin-left: 20px;
+}
+
+.up{
+    margin-bottom: 40px;
+}
+
+.resposta{
+    background-color: rgb(214, 245, 255);
+    margin: 100px 40% 100px 40%;
+    border-radius: 10px;
+    padding: 20px;
+}

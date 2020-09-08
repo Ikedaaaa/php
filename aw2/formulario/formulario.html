@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <h1>Matheus Ikeda - 1752545 - 413</h1>
+    <div class="questoes">
+        <div class="questoes1">
+            <h3>Física</h3>
+            <div class="fis up">
+                <p>Um macaco que pula de galho em galho em um zoológico, demora 6 segundos para atravessar sua jaula,
+                    que mede
+                    12 metros. Qual a velocidade média dele?</p>
+                <form action="resposta.php" method="POST">
+                    Espaço: <br>
+                    <input type="number" name="space" required> metros<br>
+                    Tempo: <br>
+                    <input type="number" name="time" required> segundos<br>
+                    Fórmula: <br>
+                    <input type="radio" name="form" value="1"> Vm = ∆s / ∆t <br>
+                    <input type="radio" name="form" value="2"> ∆s = Vm x ∆t <br>
+                    <input type="radio" name="form" value="3"> ∆t = ∆s / Vm <br>
+                    <input type="hidden" name="formtype" value="Vm">
+                    <input type="submit" value="Verificar">
+
+                </form>
+            </div>
+            <div class="fis">
+                <p>Para derreter uma barra de um material w de 1kg é necessário aquecê-lo até a temperatura de 1000°C.
+                    Sendo a temperatura do ambiente no momento analisado 20°C e o calor específico de w=4,3J/kg.°C, qual
+                    a quantidade de calor necessária para derreter a barra?</p>
+                <form action="./resposta.php" method="post">
+                    Massa: <br>
+                    <input type="number" name="massa" required> kg<br>
+                    Temperatura a ser alcançada: <br>
+                    <input type="number" name="tempmax" required> °C<br>
+                    Temperatura do ambiente: <br>
+                    <input type="number" name="tempamb" required> °C<br>
+                    Calor específico: <br>
+                    <input type="text" name="calor" required> J/kg.°C <br>
+                    Fórmula: <br>
+                    <input type="radio" name="form" value="1"> C = Q / Δθ = m . c <br>
+                    <input type="radio" name="form" value="2"> Q = m . L <br>
+                    <input type="radio" name="form" value="3"> Q = m . c . Δθ <br>
+                    <input type="hidden" name="formtype" value="Q">
+                    <input type="submit" value="Verificar">
+                </form>
+            </div>
+        </div>
+        <div class="questoes1">
+            <h3 class="geo">Geografia</h3>
+            <div class="geo up">
+                <p>Quando falamos que um lugar é ___________________, estamos dizendo que sua população total é grande.
+                    Ao dizer que um local está ___________________, significa que a disponibilidade de recursos, ou a
+                    sua distribuição, não é suficiente para atender o contingente populacional. E, por fim, quando um
+                    lugar é ___________________, significa que há uma grande quantidade de habitantes por m².</p>
+                <form action="./resposta.php" method="get">
+                    A alternativa que completa as lacunas do texto acima é: <br>
+                    <input type="radio" name="form" value="1"> a) superpovoado, precarizado, massificado. <br>
+                    <input type="radio" name="form" value="2"> b) populoso, superpovoado, densamente povoado. <br>
+                    <input type="radio" name="form" value="3"> c) densamente povoado, precarizado, densamente povoado.
+                    <br>
+                    <input type="radio" name="form" value="4"> d) superpovoado, precarizado, super-habitado. <br>
+                    <input type="radio" name="form" value="5"> e) populoso, superpovoado, super-habitado. <br>
+                    <input type="hidden" name="formtype" value="demografia">
+                    <input type="submit" value="Verificar">
+                </form>
+            </div>
+            <div class="geo">
+                <p>A entrada maciça dos grupos haitianos no Brasil a partir de 2010 gerou diversas polêmicas na
+                    sociedade e acirrou o debate acerca das condições humanas de estrangeiros ilegais no território
+                    nacional. A entrada clandestina desses migrantes ocorreu principalmente:</p>
+                <form action="./resposta.php" method="get">
+                    <input type="radio" name="form" value="1"> a) pelas zonas litorâneas, em embarcações ilegais. <br>
+                    <input type="radio" name="form" value="2"> b) durante a realização da Copa do Mundo de 2014. <br>
+                    <input type="radio" name="form" value="3"> c) por via aérea, com falsificação de documentos. <br>
+                    <input type="radio" name="form" value="4"> d) em rotas de imigração na fronteira amazônica. <br>
+                    <input type="radio" name="form" value="5"> e) por estradas e fluxos do extremo sul do país. <br>
+                    <input type="hidden" name="formtype" value="imigracao">
+                    <input type="submit" value="Verificar">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
